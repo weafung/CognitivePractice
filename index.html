@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>个人首页 - Weafung的个人主页</title>
+    <meta charset="utf-8">
+    <script src="./js/jquery-3.1.1.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/clock-1.1.0.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/skills.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="container">
+        <div class="row clearfix">
+            <div class="col-md-12 column">
+                <h1 align=center>Weafung的个人主页</h1>
+            </div>
+        </div>
+        <div class="navbar navbar-default" role="navigation">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="./index.html">个人首页</a></li>
+                <li><a href="./message_board.html">留言板</a></li>
+                <li><a href="./works_display.html">作品展示</a></li>
+            </ul>
+        </div>
+        <div class="row clearfix">
+            <div class="col-md-4 column">
+                <h4><span class="glyphicon glyphicon-certificate" style="color:#20a0ff"></span>
+                &nbsp;&nbsp;基本信息 My Information</h4>
+                <hr>
+                <img src="./img/1.png" class="img-circle"  height="160" width="160">
+                <div style="float:right;line-height:200%">
+                    <span class="glyphicon glyphicon-user" style="color:#20a0ff"></span>&nbsp;&nbsp;姓名： Weafung<br/>
+                    <span class="glyphicon glyphicon-heart" style="color:#20a0ff"></span>&nbsp;&nbsp;学校： XX大学<br/>
+                    <span class="glyphicon glyphicon-pencil" style="color:#20a0ff"></span>&nbsp;&nbsp;班级： XX级软件工程X班<br/>
+                    <span class="glyphicon glyphicon-qrcode" style="color:#20a0ff"></span>&nbsp;&nbsp;学号： 22XX00XXX<br/>
+                    <span class="glyphicon glyphicon-calendar" style="color:#20a0ff"></span>&nbsp;&nbsp;生日： 199X-XX-XX<br/>
+                    <span class="glyphicon glyphicon-home" style="color:#20a0ff"></span>&nbsp;&nbsp;家乡： XXXX<br/>
+                </div>
+            </div>
+            <div class="col-md-4 column">
+                <h4><span class="glyphicon glyphicon-certificate" style="color:#20a0ff"></span>
+                    &nbsp;&nbsp;获奖情况 My Prize</h4>
+                 <hr>
+                <div style="float:left;line-height:200%">
+                    大一下学期 <font style="color:#20a0ff">校综合奖学金二等奖</font><br/>
+                    大一下学期 <font style="color:#20a0ff">数计学院三好学生</font><br/>   
+                    大一上学期 <font style="color:#20a0ff">校综合奖学金二等奖</font><br/>
+                </div>
+            </div>
+            <div class="col-md-4 column">
+                <h4><span class="glyphicon glyphicon-certificate" style="color:#20a0ff"></span>
+                &nbsp;&nbsp;兴趣爱好 I Like</h4>
+                <hr>
+                <div style="float:left;line-height:200%">
+                    跑 步 <font style="color:#20a0ff">Running</font><br/>
+                    阅 读 <font style="color:#20a0ff">Reading</font><br/>   
+                    敲 代 码 <font style="color:#20a0ff">Coding</font><br/>
+                    乒 乓 球 <font style="color:#20a0ff">Pingpong</font><br/>
+                </div>
+                <div style="float:right" class="clock" id="clock"></div>
+            </div>
+        </div>
+        <div class="row clearfix">
+            <hr>
+            <div class="col-md-4 column">
+                <h4><span class="glyphicon glyphicon-certificate" style="color:#20a0ff"></span>
+                &nbsp;&nbsp;专业技能 Skills</h4>
+                <hr>
+                <div style="line-height:200%">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;熟悉Windows、Centos系统，自主学习Web相关知识，掌握HTML、CSS、Javascript、PHP、MySQL等网页相关语言，掌握C、C++等高级语言。目前正在自学Python语言。
+                </div>
+            </div>
+            <div class="col-md-8 column">
+            <h4>&nbsp;</h4>
+            <hr>
+            <div class="skills"><div class="skills-font" style="margin-top:45px;margin-left:33px;">C/C++</div></div>
+            <div class="skills"><div class="skills-font" style="margin-top:45px;margin-left:33px;">HTML</div></div>
+            <div class="skills"><div class="skills-font" style="margin-top:45px;margin-left:38px;">CSS</div></div>
+            <div class="skills"><div class="skills-font" style="margin-top:45px;margin-left:15px;">Javascript</div></div>
+            <div class="skills"><div class="skills-font" style="margin-top:45px;margin-left:38px;">PHP</div></div>
+            <div class="skills"><div class="skills-font" style="margin-top:45px;margin-left:28px;">MySQL</div></div>
+            </div>
+        </div>
+        <div class="row clearfix">
+            <div class="col-md-12 column">
+            <hr>
+            <div align=center>Copyright © 2016 Weafung. All Rights Reserved. Weafung 版权所有.</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var clock = $("#clock").clock({
+            width: 160,
+            height: 160,
+        }),
+        data = clock.data('clock');
+
+        window.onload = function(){
+            var config = {
+                vx: 4,
+                vy:  4,
+                height: 2,
+                width: 2,
+                count: 150,
+                color: "121, 162, 185",
+                stroke: "100,200,180",
+                dist: 6000,
+                e_dist: 20000,
+                max_conn: 10
+            }
+            CanvasParticle(config);
+        }
+    </script>
+    <script type="text/javascript" src="./js/canvas-particle.js"></script>
+</body>
+</html>

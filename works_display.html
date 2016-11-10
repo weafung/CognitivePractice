@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>作品展示 - Weafung的个人主页</title>
+    <meta charset="utf-8">
+    <script src="./js/jquery-3.1.1.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/clock-1.1.0.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/skills.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="container">
+        <div class="row clearfix">
+            <div class="col-md-12 column">
+                <h1 align=center>Weafung的个人主页</h1>
+            </div>
+        </div>
+        <div class="navbar navbar-default" role="navigation">
+            <ul class="nav navbar-nav">
+                <li><a href="./index.html">个人首页</a></li>
+                <li><a href="./message_board.html">留言板</a></li>
+                <li class="active"><a href="./works_display.html">作品展示</a></li>
+            </ul>
+        </div>
+        <div class="row clearfix">
+            <div class="col-md-12 column">
+                <h4 align=center><span class="glyphicon glyphicon-certificate" style="color:#20a0ff"></span>
+                    &nbsp;&nbsp;作品展示 Works Display</h4>
+                <hr>
+            </div>
+        </div>
+        <div class="row clearfix">
+            <div class="col-md-8 column">
+                <h4 style="display: inline;"><span class="glyphicon glyphicon-star" style="color:#20a0ff"></span>
+                    &nbsp;&nbsp;纳新网 ： 西二在线纳新报名平台</h4> <a href="http://west2.demo.weafung.com">在线演示</a>
+                <hr>
+                <img src="./img/west2_1.png" class="img-responsive" alt="west2online"  style="border:1px solid black">
+                <div class="row clearfix">
+                    <hr>
+                    <div class="col-md-12 column">
+                        <h4 style="display: inline;"><span class="glyphicon glyphicon-star" style="color:#20a0ff"></span>
+                            &nbsp;&nbsp;个人主页 ： 认知实习作业</h4> <a href="http://cp.demo.weafung.com">在线演示</a>
+                        <hr>
+                        <img src="./img/internship_1.png" class="img-responsive" alt="west2online" style="border:1px solid black">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 column">
+                <h4 style="display: inline;"><span class="glyphicon glyphicon-star" style="color:#20a0ff"></span>
+                    &nbsp;&nbsp;兼Qu ： 兼职发布平台</h4> <a href="http://jianqu.demo.weafung.com">在线演示</a>
+                <hr>
+                <img src="./img/jianqu_1.png" class="img-responsive" alt="JianQu" >
+            </div>
+        </div>
+
+        <div class="row clearfix">
+            <div class="col-md-12 column">
+            <hr>
+            <div align=center>Copyright © 2016 Shi Weifeng. All Rights Reserved. Weafung 版权所有.</div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var clock = $("#clock").clock({
+            width: 160,
+            height: 160,
+        }),
+        data = clock.data('clock');
+
+        window.onload = function(){
+            var config = {
+                vx: 4,
+                vy:  4,
+                height: 2,
+                width: 2,
+                count: 150,
+                color: "121, 162, 185",
+                stroke: "100,200,180",
+                dist: 6000,
+                e_dist: 20000,
+                max_conn: 10
+            }
+            CanvasParticle(config);
+        }
+    </script>
+    <script type="text/javascript" src="./js/canvas-particle.js"></script>
+</body>
+</html>
